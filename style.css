@@ -1,4 +1,4 @@
-
+                                /* Font connection*/
 
 @font-face {
   font-family: Pattaya-Regular;
@@ -24,6 +24,9 @@
   font-weight: bold;
   font-style: normal;
 }
+                                /* End font connection*/
+
+                                /* Css reset*/
 body,
 div,
 dl,
@@ -110,7 +113,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 menu,
 nav,
 section,
@@ -122,7 +124,7 @@ img {
   height: auto;
 }
 body{
-  font-family: "Gotham Pro";
+  font-family: 'Gotham Pro';
   font-style: normal;
 
 }
@@ -132,6 +134,10 @@ ul{
 a{
   text-decoration: none;
 }
+
+                                /* End css reset*/
+
+                                /* Header + menu*/
 .header{
   display: flex;
   background-image: url('img/header_bg.jpg');
@@ -140,7 +146,6 @@ a{
   position: relative;
   flex-direction: column;
   z-index: 2;
-
 }
 .site_name {
   font-family: Pattaya-Regular;
@@ -220,9 +225,24 @@ a{
     top: 40px;
     background-color: #ffeacb;
 }
-.row_submenu{
-    padding-left: 25px;
+.ul_submenu{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    flex-wrap: wrap;
+    width: 100%;
 }
+.li_submenu{
+    text-align: left;
+    padding-left: 25px;
+    margin-right: 25px;
+    border-bottom: 2px solid black;
+}
+.li_submenu:nth-child(6n){
+    border-bottom: none;
+}
+                                /* End header + menu*/
+
 @media screen and (max-width: 1200px){
     .row_submenu{
         padding-left: 15px;
