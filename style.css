@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: Pattaya-Regular;
   src: url(fonts/Pattaya-Regular.ttf);
@@ -191,7 +193,7 @@ a{
   width: 100%;
   line-height: 2.5 ;
 }
-.nav_menu ul li{
+.li_menu{
   flex-grow: 1;
   text-align: center;
 }
@@ -207,16 +209,24 @@ a{
   padding: 30px;
   display: none;
 }
-.submenu{
-  position: absolute;
-  top: 50px;
-  z-index: 10;
-}
+
 .sub_menu_item{
   color: black;
 }
+.submenu{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 40px;
+    background-color: #ffeacb;
+}
+.row_submenu{
+    padding-left: 25px;
+}
 @media screen and (max-width: 1200px){
-
+    .row_submenu{
+        padding-left: 15px;
+    }
 }
 @media screen and (max-width: 992px){
   .nav_menu {
