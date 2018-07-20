@@ -255,6 +255,31 @@ a:hover{
 }
                                 /* End header + menu*/
 
+                                /* Mobile menu*/
+.mobile_menu{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.95);
+    top: 0px;
+    left: 0px;
+}
+.ul_mobile_submenu{
+    display: none;
+}
+.ul_mobile_menu{
+
+
+
+}
+.mobile_menu_item{
+    color: black;
+}
+.li_mobile_menu{
+    font-size: 16px;
+    padding: 10px 80px;
+    border-bottom: 1px solid black;
+}
+                                /* End mobile menu*/
+
 @media screen and (max-width: 1200px){
     .li_submenu{
         padding-left: 15px;
