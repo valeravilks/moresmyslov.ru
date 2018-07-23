@@ -46,6 +46,11 @@ $('.menu_mobile_item').click(function () {
     event.preventDefault();
 });
 $('.li_mobile_menu').click(function(){
-    $(this).children(".mobile_submenu").show();
+    $(this).find(".mobile_submenu").toggleClass("e_close_menu");
+    $('.mobile_menu_select').text($(this).find('.menu_mobile_item').text());
 
+});
+$(".mobile_back img").click(function () {
+    $('*').find('.mobile_submenu').not('e_close_menu').addClass('e_close_menu');
+    $('.mobile_menu_select').text("");
 });

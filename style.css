@@ -309,7 +309,8 @@ a:hover{
     background-color: white;
     width: 400px;
     top: 0;
-    left: -500px;
+    left: 0;
+    transition: left 0.5s ease;
 }
 .mobile_menu_item{
     color: black;
@@ -325,7 +326,7 @@ a:hover{
     border-bottom: 1px solid black;
 }
 .mobile_back{
-    flex-grow: 1;
+
 }
 .mobile_back img{
     width: 20px;
