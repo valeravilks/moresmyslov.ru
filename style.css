@@ -184,12 +184,12 @@ a:hover{
 }
 .name_and_description{
   padding: 15px 27px;
-  background-color: rgba(0, 0, 0, 0.35);
+
   align-self: center;
-
+    background-image: -moz-linear-gradient( 32deg, rgba(0, 0, 1, 0.11) 0%, rgba(255,255,255, 0.11) 100%);
+    background-image: -webkit-linear-gradient( 32deg, rgba(0, 0, 1, 0.11) 0%, rgba(255,255,255, 0.11) 100%);
+    background-image: -ms-linear-gradient( 32deg, rgba(0, 0, 1, 0.11) 0%, rgba(255, 255, 255, 0.11) 100%);
 }
-
-
 .header_container{
   display: flex;
 }
@@ -215,8 +215,11 @@ a:hover{
   padding-left: 25px;
 }
 .nav_menu{
-  background-color: rgba(255, 247, 240, 0.31);
+
   position: relative;
+    background-image: -moz-linear-gradient( 32deg, rgba(0, 0, 1, 0.11) 0%, rgba(255,255,255, 0.11) 100%);
+    background-image: -webkit-linear-gradient( 32deg, rgba(0, 0, 1, 0.11) 0%, rgba(255,255,255, 0.11) 100%);
+    background-image: -ms-linear-gradient( 32deg, rgba(0, 0, 1, 0.11) 0%, rgba(255, 255, 255, 0.11) 100%);
 }
 .ul_menu{
   display: flex;
@@ -318,6 +321,9 @@ a:hover{
   .header{
     min-height: 300px;
   }
+  .menu_blur{
+      display: none;
+  }
 }
 @media screen and (max-width: 768px){
   .header_social_icon{
@@ -330,3 +336,26 @@ a:hover{
 
   }
 }
+
+                                .Прямоугольник_Название {
+
+                                    opacity: 0.102;
+                                    position: absolute;
+                                    left: 394px;
+                                    top: 124px;
+                                    width: 620px;
+                                    height: 120px;
+                                    z-index: 7;
+                                }
+                                .Прямоугольник_меню {
+                                    background-image: -moz-linear-gradient( 32deg, rgb(0,0,1) 0%, rgb(255,255,255) 100%);
+                                    background-image: -webkit-linear-gradient( 32deg, rgb(0,0,1) 0%, rgb(255,255,255) 100%);
+                                    background-image: -ms-linear-gradient( 32deg, rgb(0,0,1) 0%, rgb(255,255,255) 100%);
+                                    opacity: 0.102;
+                                    position: absolute;
+                                    left: 0px;
+                                    top: 361px;
+                                    width: 1920px;
+                                    height: 39px;
+                                    z-index: 11;
+                                }
