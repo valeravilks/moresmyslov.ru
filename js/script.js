@@ -10,6 +10,11 @@ $(document).ready(function() {
         "padding-right": pad_r,
         "padding-bottom": pad_b
     });
+    var menu = $('.header_block').height() - $('.nav_menu').height() + 40;
+    $('.menu_blur').css({
+        "padding-top": menu
+    });
+
 });
 
 $(window).resize(function() {
@@ -23,4 +28,10 @@ $(window).resize(function() {
         "padding-right": pad_r,
         "padding-bottom": pad_b
     });
+
+    var menu = $('.header_block').height() - $('.nav_menu').height() + 40;
+    $('.menu_blur').css({
+        "padding-top": menu
+    });
+
 });
