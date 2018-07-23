@@ -35,3 +35,17 @@ $(window).resize(function() {
     });
 
 });
+
+$('.menu_button img').click(function () {
+    $('.mobile_menu').toggleClass("e_close_menu");
+});
+$('.mobile_close img').click(function () {
+    $('.mobile_menu').toggleClass("e_close_menu");
+});
+$('.menu_mobile_item').click(function () {
+    event.preventDefault();
+});
+$('.li_mobile_menu').click(function(){
+    $(this).children(".mobile_submenu").show();
+
+});

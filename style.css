@@ -242,7 +242,9 @@ a:hover{
   padding: 30px;
   display: none;
 }
-
+.menu_button img{
+    cursor: pointer;
+}
 .sub_menu_item{
   color: black;
     font-size: 14px;
@@ -286,15 +288,28 @@ a:hover{
     background-color: rgba(255, 255, 255, 0.95);
     top: 0px;
     left: 0px;
+    transition: left 0.5s ease;
 
 }
 .ul_mobile_submenu{
-    display: none;
+    display: block;
 }
 .ul_mobile_menu{
+    position: absolute;
+    background-color: white;
+    width: 400px;
 
 
-
+}
+.mobile_menu_select{
+    flex-grow: 1;
+}
+.mobile_submenu{
+    position: absolute;
+    background-color: white;
+    width: 400px;
+    top: 0;
+    left: -500px;
 }
 .mobile_menu_item{
     color: black;
@@ -304,6 +319,43 @@ a:hover{
     padding: 10px 80px;
     border-bottom: 1px solid black;
 }
+.li_mobile_submenu{
+    font-size: 16px;
+    padding: 10px 80px;
+    border-bottom: 1px solid black;
+}
+.mobile_back{
+    flex-grow: 1;
+}
+.mobile_back img{
+    width: 20px;
+    margin: 30px;
+    cursor: pointer;
+}
+.mobile_close img{
+    width: 20px;
+    margin: 30px;
+    cursor: pointer;
+}
+.mobile_space{
+    width: auto;
+}
+.mobile_back_close_button{
+    display: flex;
+    background-color: #ffb900;
+    width: 400px;
+}
+
+.e_close_menu{
+    left: -500px;
+
+}
+.submenu_mobile_event{
+
+}
+
+
+
                                 /* End mobile menu*/
 
 @media screen and (max-width: 1200px){
@@ -317,6 +369,7 @@ a:hover{
   }
   .menu_button{
     display: block;
+
   }
   .header{
     min-height: 300px;
